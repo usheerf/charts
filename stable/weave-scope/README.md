@@ -4,7 +4,7 @@
 
 This chart contains two subcharts (*weave-scope-frontend* and *weave-scope-agent*) which deploy the corresponding components of Weave Scope, an interactive container monitoring and visualization application.
 
-Either subchart can be deployed on its own (set the "enabled" value to "false" for the chart you want to suppress) or the two can be deployed together (the default).
+Either subchart can be deployed on its own (set the "enabled" value to "false" for the chart you want to suppress) or the two can be deployed together (the default)..
 
 ## Compatibility notes
 
