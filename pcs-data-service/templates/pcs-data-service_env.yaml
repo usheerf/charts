@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{.Chart.Name}}
+data:
+  JAVA_OPTS: "-Xmx4096M -Xss256K -XX:MaxMetaspaceSize=104M -Xms2048M"
+  SPRING_PROFILES_ACTIVE: "{{ .Values.spring.profile }}"
+  SPRING_CLOUD_CONFIG_URI: "https://config-server:8080"
+  SPRING_CLOUD_CONFIG_FAILFAST: "false"
+  SPRING_BOOT_ADMIN_CLIENT_URL: "https://spring-boot-admin:8080"
+  GUBER_HOST: "pcs-gubernator"
+  GUBER_PORT: "81"
+  spring.boot.admin.client.instance.prefer-ip: "true"
