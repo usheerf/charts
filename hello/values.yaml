@@ -2,13 +2,6 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 replicaCount: 2
-image:
-  repository: ${image.FULLY_QUALIFIED_DIGEST_WITH_TAG}
-  tag: ${artifact.buildNo}
-  pullSecret: regsecret
-  pullPolicy: IfNotPresent
-  # for local development against Minikube registry
-  #pullPolicy: Never    
 service:
   name: hello-service
   type: NodePort
