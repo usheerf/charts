@@ -1,7 +1,7 @@
-image:
-  repository: ${image.FULLY_QUALIFIED_DIGEST_WITH_TAG}
-  tag: ${artifact.buildNo}
-  pullSecret: regsecret
-  pullPolicy: IfNotPresent
+#image:
+  #repository: ${image.FULLY_QUALIFIED_DIGEST_WITH_TAG}
+ # tag: ${artifact.buildNo}
+ # pullSecret: regsecret
+#  pullPolicy: IfNotPresent
   # for local development against Minikube registry
   #pullPolicy: Never
