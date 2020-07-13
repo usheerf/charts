@@ -10,7 +10,7 @@ image:
   # for local development against Minikube registry
   #pullPolicy: Never
 service:
-  name: hello-service
+  name: hello-service-${workflow.releaseNo}
   type: NodePort
   externalPort: 80
   internalPort: 8080
